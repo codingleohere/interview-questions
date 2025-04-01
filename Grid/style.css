@@ -1,18 +1,29 @@
 .container {
-    background-color: red;
-    /* padding: 10px; */
-    /* To tell grid how many cols will be there */
+    background-color: rgb(0, 0, 0);
+    grid-gap: 10px;
+    padding: 10px;
     display: grid;
-    grid-template-rows: repeat(1, 200px);
-    /* grid-template-columns: 1fr 2fr 1fr; */
-    /* grid-template-columns: 1fr 200px 1fr 1fr;  */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-auto-columns: 100px;
-    grid-auto-rows: 100px; */
-    /* grid-auto-flow: column; */
+    grid-template-areas: 'header header'
+        'main aside'
+        'footer footer';
 }
 
 .item {
-    background-color: rebeccapurple;
-    margin: 10px;
+    background-color: aquamarine;
+}
+
+.item-1 {
+    grid-area: header;
+}
+
+.item-2 {
+    grid-area: main;
+}
+
+.item-3 {
+    grid-area: aside;
+}
+
+.item-4 {
+    grid-area: footer;
 }

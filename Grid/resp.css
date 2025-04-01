@@ -1,0 +1,20 @@
+.container {
+    background-color: rgb(142, 201, 252);
+    padding: 10px;
+    display: grid;
+    /* grid-gap: 20px;
+    height: 600px;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(2, 100px); */
+
+    /* responsiev */
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+        /* align-content: ;
+    justify-content: ; */
+}
+
+.item {
+    background-color: rgb(75, 161, 237);
+    /* margin: 10px; */
+}

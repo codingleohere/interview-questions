@@ -12,3 +12,8 @@ let strArr = str.split(" ");
 let revStrArr = strArr.map(s => s.split("").reverse().join(""))
 console.log(revStrArr.join(" "))
 //here we are using split("") because we want to split it into arrays so that reveser method can work. If we use (" ") it will create whole array and there will be nothing
+
+
+// words reverse not entire  string
+// let str = 'hello world'
+// console.log(str.split(' ').map((word)=>word.split('').reverse().join('')).join(' '))
