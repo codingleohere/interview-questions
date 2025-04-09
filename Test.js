@@ -1,2 +1,11 @@
-// [0,1,1,2,3,5,8]
-// for
+function fun() {
+    let exec = false;
+    if (!exec) {
+        console.log('first')
+        exec = true
+    }
+}
+
+fun(); // "do something" happens
+fun(); // nothing happens
+fun(); // nothing happens
